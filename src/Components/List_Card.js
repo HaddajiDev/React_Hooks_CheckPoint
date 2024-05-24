@@ -9,7 +9,7 @@ function List_Card(props) {
       <Card.Body>
         <Card.Title>{props.name.title}</Card.Title>
         <Card.Text>{props.name.desc}</Card.Text>
-        <Card.Text>{props.name.rating}</Card.Text>
+        <Card.Text>{props.name.rating}<img src='https://cdn4.iconfinder.com/data/icons/small-n-flat/24/star-24.png'/></Card.Text>
         <Button variant="primary">Watch Now!</Button>
       </Card.Body>
     </Card>
