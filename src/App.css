@@ -1,0 +1,23 @@
+.con{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.add-movie{
+  display: flex;
+  margin: 20px;
+}
+
+.navbarr{
+  background-color:bisque !important;
+  height: 65px;
+}
+
+.nav_brand{
+  font-size: 35px !important;
+  font-weight: 600;
+  color:tomato !important;
+}
