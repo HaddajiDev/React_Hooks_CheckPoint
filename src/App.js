@@ -9,13 +9,14 @@ import React, { useEffect, useState } from 'react';
 
 function App() {
   const [search, setSearch] = useState("");
-  const [mov, setMovie] = useState(Movies);    
+  const [mov, setMovie] = useState(Movies);
+  const [rateFilter, setRateFilter] = useState(0);
   return (
     <div>
-    <NavBar search={setSearch}/>
+    <NavBar search={setSearch} setRateFilter={setRateFilter}/>
     <div className='container-fluid'>        
         <Add_Movie setMovie={setMovie}/> 
-        <div className='con'>{mov.filter((el) => el.title.toLowerCase().includes(search.toLowerCase())).map((el) => <List_Card name={el}/>)}</div>
+        <div className='con'>{mov.filter((el) => el.title.toLowerCase().includes(search.toLowerCase()) && parseFloat(el.rating, 10) >= rateFilter).map((el) => <List_Card name={el}/>)}</div>
     </div>
     </div>
   );

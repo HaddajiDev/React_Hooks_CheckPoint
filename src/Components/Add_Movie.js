@@ -16,10 +16,14 @@ function Add_Movie({ setMovie }) {
     const [imgUrl, setImgUrl] = useState('');
     const [rating, setRating] = useState('');
 
+    
+
     const handleSubmit = () => {          
         Add_Movie_(title, description, imgUrl, rating, setMovie);
         handleClose(); 
     };
+
+    
   return (
     <div className='container add-movie'><Button variant="primary" onClick={handleShow}>
     Add Movie

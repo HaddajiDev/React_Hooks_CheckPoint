@@ -6,9 +6,13 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 
-function NavBar(props) {
+function NavBar({setRateFilter, search}) {
+
+  const setRate = (value) => {
+    setRateFilter(value);
+  }
   return (
-    <div><Navbar expand="lg" className="bg-body-tertiary">
+    <div><Navbar expand="lg" className="bg-body-tertiary navbarr">
     <Container fluid className='navbarr'>
       <Navbar.Brand className='nav_brand' href="#">Movies</Navbar.Brand>
       <Navbar.Toggle aria-controls="navbarScroll" />
@@ -34,20 +38,28 @@ function NavBar(props) {
             Link
           </Nav.Link>
         </Nav>
+        <div className='Rating_Buttons'>
+        <Button onClick={() => setRate(1)}><img src='https://cdn4.iconfinder.com/data/icons/small-n-flat/24/star-24.png'/>1</Button>
+        <Button onClick={() => setRate(2)}><img src='https://cdn4.iconfinder.com/data/icons/small-n-flat/24/star-24.png'/>2</Button>
+        <Button onClick={() => setRate(3)}><img src='https://cdn4.iconfinder.com/data/icons/small-n-flat/24/star-24.png'/>3</Button>
+        <Button onClick={() => setRate(4)}><img src='https://cdn4.iconfinder.com/data/icons/small-n-flat/24/star-24.png'/>4</Button>
+        <Button onClick={() => setRate(5)}><img src='https://cdn4.iconfinder.com/data/icons/small-n-flat/24/star-24.png'/>5</Button>
+        <Button onClick={() => setRate(0)}>X</Button>
+        </div>
         <Form className="d-flex">
           <Form.Control
             type="search"
             placeholder="Search"
             className="me-2"
             aria-label="Search"
-            onChange={(e) => props.search(e.target.value)}
+            onChange={(e) => search(e.target.value)}
           />
           <Button variant="outline-success">Search</Button>
         </Form>
       </Navbar.Collapse>
     </Container>
   </Navbar></div>
-  )
+  );
 }
 
 export default NavBar

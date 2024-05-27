@@ -19,5 +19,19 @@
 .nav_brand{
   font-size: 35px !important;
   font-weight: 600;
-  color:tomato !important;
+  color:tomato !important;  
+}
+
+.Rating_Buttons{
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  padding: 10px;
+  
+}
+.Rating_Buttons button{
+  background-color: rgb(255, 91, 91) !important;
+  border-color: white !important;
+  font-size: 20px;
+  font-weight: 500;
 }

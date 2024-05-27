@@ -16,12 +16,12 @@ export function Add_Movie_(title, desc, img_Path, rating, setMovie){
 const movie_1 = new Movie("The Shawshank Redemption",
  "Based on a Stephen King novella, this drama tells the story of Andy Dufresne, a man sentenced to life in prison for a crime he didn't commit",
  "https://m.media-amazon.com/images/M/MV5BNDE3ODcxYzMtY2YzZC00NmNlLWJiNDMtZDViZWM2MzIxZDYwXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_.jpg",
- "4.5"
+ "2.5"
 );
 const movie_2 = new Movie("The Godfather",
  "This crime drama, directed by Francis Ford Coppola, chronicles the powerful Italian-American crime family of Don Vito Corleone and their struggle to maintain power",
  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2xCIs1SIq15fDZ66ciVX6JcheC_P34iXSLnoO3dOIAQ&s",
- "4.9"
+ "3.9"
 );
 const movie_3 = new Movie("Inception",
  "Directed by Christopher Nolan, this sci-fi thriller explores the concept of shared dreaming and follows a group of thieves who steal corporate secrets ",
