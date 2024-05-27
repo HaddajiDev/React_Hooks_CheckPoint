@@ -21,7 +21,7 @@ const movie_1 = new Movie("The Shawshank Redemption",
 const movie_2 = new Movie("The Godfather",
  "This crime drama, directed by Francis Ford Coppola, chronicles the powerful Italian-American crime family of Don Vito Corleone and their struggle to maintain power",
  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2xCIs1SIq15fDZ66ciVX6JcheC_P34iXSLnoO3dOIAQ&s",
- "3.9"
+ "3.2"
 );
 const movie_3 = new Movie("Inception",
  "Directed by Christopher Nolan, this sci-fi thriller explores the concept of shared dreaming and follows a group of thieves who steal corporate secrets ",
